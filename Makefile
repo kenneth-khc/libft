@@ -1,5 +1,8 @@
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
+FSAN = -fsanitize=address
+DEBUG = -g3
+
 RED = \033[0;91m
 GREEN = \033[92m
 RESET = \033[0m

@@ -6,7 +6,7 @@
 /*   By: kecheong <kecheong@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/15 14:31:40 by kecheong          #+#    #+#             */
-/*   Updated: 2023/09/07 17:38:21 by kecheong         ###   ########.fr       */
+/*   Updated: 2024/03/25 11:21:07 by kecheong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ int	d_parse_string(char *string, va_list ap, int fd)
 	format = d_initialize_struct();
 	format->fd = fd;
 	while (string[i])
-	{	
+	{
 		if (string[i] != '%')
 		{
 			ft_putchar_fd(string[i], format->fd);
