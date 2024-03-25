@@ -19,7 +19,7 @@ void	d_print_string(char *string, t_dformat *format)
 
 	i = 0;
 	if (string == NULL)
-	string = "(null)";
+		string = "(null)";
 	str_len = ft_strlen(string);
 	if (format->precision && format->precise_len < str_len)
 		str_len = d_print_precision(string, format, str_len, i);

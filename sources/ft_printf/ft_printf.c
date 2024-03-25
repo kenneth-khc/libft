@@ -63,7 +63,7 @@ int	parse_string(char *string, va_list ap)
 	i = 0;
 	format = initialize_struct();
 	while (string[i])
-	{	
+	{
 		if (string[i] != '%')
 		{
 			ft_putchar(string[i]);

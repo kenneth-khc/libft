@@ -59,7 +59,7 @@ void	print_string_int(char *string, t_format *format)
 		digits = print_width_int(format, digits);
 	digits = print_precision_int(format, digits);
 	while (string[i] && i < digits)
-	{	
+	{
 		if (format->is_zero && format->precision && format->precise_len == 0)
 			break ;
 		ft_putchar(string[i]);

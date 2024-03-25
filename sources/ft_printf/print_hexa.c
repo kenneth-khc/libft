@@ -61,7 +61,7 @@ void	print_string_hexa(char *string, t_format *format)
 		digits = print_width_hexa(format, digits);
 	digits = print_precision_hexa(format, digits);
 	while (string[i] && i < digits)
-	{	
+	{
 		if (format->is_zero && format->precision && format->precise_len == 0)
 			break ;
 		ft_putchar(string[i]);

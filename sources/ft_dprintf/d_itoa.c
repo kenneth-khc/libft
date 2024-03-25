@@ -35,16 +35,13 @@ static size_t	num_len(long n)
 static void	convert(char *str, long n, size_t len)
 {
 	unsigned int	i;
-	int				neg;
 
 	i = 0;
-	neg = 0;
 	if (n == 0)
 		str[0] = '0';
 	if (n < 0)
 	{
 		len -= 1;
-		neg = 1;
 		n *= -1;
 	}
 	while (i < len)
