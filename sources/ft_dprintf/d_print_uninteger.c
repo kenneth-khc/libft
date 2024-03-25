@@ -24,8 +24,7 @@ void	d_print_uninteger(int nbr, t_dformat *format)
 
 void	d_resolve_format_unint(unsigned int nbr, t_dformat *format)
 {
-	if (nbr >= 0)
-		format->positive = true;
+	format->positive = true;
 	if (nbr == 0)
 		format->is_zero = true;
 	if (format->plus && format->space)
@@ -55,7 +54,7 @@ void	d_print_string_unint(char *string, t_dformat *format)
 		digits = d_print_width_unint(format, digits);
 	digits = d_print_precision_unint(format, digits);
 	while (string[i] && i < digits)
-	{	
+	{
 		if (format->is_zero && format->precision && format->precise_len == 0)
 			break ;
 		ft_putchar_fd(string[i], format->fd);
