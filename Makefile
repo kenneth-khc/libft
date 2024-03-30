@@ -1,7 +1,7 @@
 CC = cc
-CFLAGS = -Wall -Wextra -Werror
 FSAN = -fsanitize=address
 DEBUG = -g3
+CFLAGS = -Wall -Wextra -Werror $(DEBUG)
 
 RED = \033[0;91m
 GREEN = \033[92m

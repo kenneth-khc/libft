@@ -6,7 +6,7 @@
 /*   By: kecheong <kecheong@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/30 14:58:47 by kecheong          #+#    #+#             */
-/*   Updated: 2024/03/24 04:59:52 by kecheong         ###   ########.fr       */
+/*   Updated: 2024/03/30 23:32:27 by kecheong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,10 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 char	*ft_strcpy(char *dest, const char *src);
 bool	ft_str_endswith(const char *str, const char *suffix);
+
+/* Integer manipulation */
+int		ft_reverse_int(int num);
+int		ft_count_digits(int num);
 
 // File I/O
 void	ft_putchar_fd(char c, int fd);
