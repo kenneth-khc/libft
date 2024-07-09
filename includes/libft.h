@@ -6,20 +6,17 @@
 /*   By: kecheong <kecheong@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/30 14:58:47 by kecheong          #+#    #+#             */
-/*   Updated: 2024/07/08 18:12:52 by kecheong         ###   ########.fr       */
+/*   Updated: 2024/07/09 16:22:19 by kecheong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <stdint.h>
-# include <stdlib.h>
 # include <unistd.h>
 # include <stdbool.h>
 # include <limits.h>
-# include "ft_printf.h"
-# include "ft_dprintf.h"
-# include "get_next_line_bonus.h"
+# include <stdarg.h>
 
 // Character checks and conversions
 int		ft_isalpha(int c);
@@ -40,8 +37,11 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 
 // String manipulation
 size_t	ft_strlen(const char *s);
+size_t	ft_strlen_multiple(int count, ...);
+size_t	ft_va_strlen(int count, va_list ap);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
+char	*ft_strpbrk(const char *s1, bool (*condition)(char c));
 int		ft_strcmp(const char *p1, const char *p2);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
@@ -50,6 +50,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_extract_substring(const char *start, const char *end);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strjoin_unsafe(char const *s1, char const *s2);
+char	*ft_strjoin_multiple(int count, ...);
 char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *string, char delimiter);
 int		ft_atoi(const char *str);
