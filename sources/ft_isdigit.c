@@ -15,7 +15,7 @@
  * Return 1 for true, 0 for false
 **/
 
-#include "../includes/libft.h"
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {

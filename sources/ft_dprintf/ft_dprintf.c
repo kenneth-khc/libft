@@ -10,7 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/ft_dprintf.h"
+#include <stdlib.h>
+#include "ft_dprintf.h"
 
 int	d_check_type(char *string, int i, t_dformat *format, va_list ap)
 {
@@ -43,13 +44,13 @@ int	d_check_format(char *string, int i, t_dformat *format, va_list ap)
 		i++;
 		return (i);
 	}
-	if (isflag(string[i]))
+	if (d_isflag(string[i]))
 		i = d_check_flags(string, i, format);
-	if (iswidth(string[i]))
+	if (d_iswidth(string[i]))
 		i = d_check_width(string, i, format);
-	if (isprecision(string[i]))
+	if (d_isprecision(string[i]))
 		i = d_check_precision(string, i, format);
-	if (istype(string[i]))
+	if (d_istype(string[i]))
 		i = d_check_type(string, i, format, ap);
 	return (i);
 }

@@ -14,7 +14,7 @@
  * Writes a string to a file descriptor
 **/
 
-#include "../includes/libft.h"
+#include "libft.h"
 
 void	ft_putstr_fd(char *s, int fd)
 {

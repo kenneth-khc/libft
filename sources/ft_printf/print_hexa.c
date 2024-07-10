@@ -10,7 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/ft_printf.h"
+#include <stdlib.h>
+#include "ft_printf.h"
 
 void	print_hexadecimal(unsigned int nbr, t_format *format)
 {

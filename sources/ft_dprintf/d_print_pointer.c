@@ -10,8 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/ft_dprintf.h"
+#include <stdlib.h>
 #include <stdint.h>
+#include "ft_dprintf.h"
 
 void	d_print_pointer(void *pointer, t_dformat *format)
 {

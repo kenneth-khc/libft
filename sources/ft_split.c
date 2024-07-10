@@ -10,6 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
+#include "libft.h"
+
 /**
  * Splits a string into substrings based on a delimiter
  * Returns an array of substrings
@@ -23,9 +26,6 @@
  * Iterate through the substring to get its length
  * Use length in ft_substr to get the substring 
 **/
-
-#include "../includes/libft.h"
-
 static int	count_words(char const *string, char delimiter)
 {
 	int		word_count;

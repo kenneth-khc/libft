@@ -12,7 +12,7 @@
 
 #include <stdarg.h>
 #include <stddef.h>
-#include "../includes/libft.h"
+#include "libft.h"
 
 /**
  * Calls ft_strlen on a variable list of arguments.

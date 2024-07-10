@@ -10,11 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/ft_dprintf.h"
+#include "ft_dprintf.h"
 
 int	d_check_flags(char *string, int i, t_dformat *format)
 {
-	while (isflag(string[i]))
+	while (d_isflag(string[i]))
 	{
 		if (string[i] == '-')
 			format->left_align = true;

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/ft_dprintf.h"
+#include "ft_dprintf.h"
 
 void	d_print_char(int c, t_dformat *format)
 {

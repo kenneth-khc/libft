@@ -10,7 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include <stdlib.h>
+#include "libft.h"
 
 /** 
  * Deletes the node pointed to by lst

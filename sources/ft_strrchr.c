@@ -14,7 +14,7 @@
  * Locates the last occurence of c in string s 
 **/
 
-#include "../includes/libft.h"
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {

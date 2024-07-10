@@ -10,14 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
+#include "libft.h"
+
 /**
  * Returns a new copy of a string 
  * after trimming the characters in "set" from "s1"
  * Starts trimming from the beginning and the end of the string 
 **/
-
-#include "../includes/libft.h"
-
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	const char	*start;

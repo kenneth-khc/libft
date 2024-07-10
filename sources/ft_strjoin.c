@@ -10,12 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
+#include "libft.h"
+
 /**
  * Joins string1 with string2 together in a new string
 **/
-
-#include "../includes/libft.h"
-
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*s3;

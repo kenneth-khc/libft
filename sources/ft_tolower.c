@@ -14,7 +14,7 @@
  * Converts an uppercase letter to its corresponding lowercase letter
 **/
 
-#include "../includes/libft.h"
+#include "libft.h"
 
 int	ft_tolower(int c)
 {

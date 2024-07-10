@@ -10,13 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
+#include "libft.h"
+
 /**
  * Applies the function f to each character in s
  * Index of the character is the first argument to f 
 **/
-
-#include "../includes/libft.h"
-
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	unsigned int	i;

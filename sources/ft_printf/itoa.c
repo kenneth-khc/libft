@@ -10,7 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/ft_printf.h"
+#include <stdlib.h>
+#include "ft_printf.h"
 
 static size_t	num_len(long n)
 {

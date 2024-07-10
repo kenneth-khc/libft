@@ -14,7 +14,7 @@
  * Writes a character to the standard output
 **/
 
-#include "../includes/libft.h"
+#include "libft.h"
 
 void	ft_putchar(char c)
 {

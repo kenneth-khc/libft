@@ -16,7 +16,7 @@
  * It is different from the 42 version in Piscine that checks for multiple signs 
 **/
 
-#include "../includes/libft.h"
+#include "libft.h"
 #define POSITIVE 1
 #define NEGATIVE -1
 

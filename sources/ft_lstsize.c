@@ -17,7 +17,7 @@
  * Increment the counter 
 **/
 
-#include "../includes/libft.h"
+#include "libft.h"
 
 int	ft_lstsize(t_list *lst)
 {

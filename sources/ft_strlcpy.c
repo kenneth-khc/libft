@@ -16,7 +16,7 @@
  * Behaviour is undefined if src is empty/NULL and if src and dst overlap
 **/
 
-#include "../includes/libft.h"
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {

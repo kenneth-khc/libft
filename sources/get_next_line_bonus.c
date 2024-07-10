@@ -10,7 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/get_next_line_bonus.h"
+#include <stdlib.h>
+#include "../includes/get_next_line.h"
+#include "libft.h"
 
 void	extract_line(char **buffer, char **line, ssize_t *bytes)
 {

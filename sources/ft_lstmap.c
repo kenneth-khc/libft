@@ -10,14 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
+#include "libft.h"
+
 /**
  * Iterates through the list lst and applies the function f to each node
  * Stores the modified nodes in a new list
  * Returns the new list 
 **/
-
-#include "../includes/libft.h"
-
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void(*del)(void *))
 {
 	t_list	*new_list;

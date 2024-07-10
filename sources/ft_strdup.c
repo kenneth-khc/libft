@@ -10,12 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
+#include "libft.h"
+
 /** 
  * Duplicates a string by copying it to a newly allocated string
 **/
-
-#include "../includes/libft.h"
-
 char	*ft_strdup(const char *s1)
 {
 	int		strlen;

@@ -10,7 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/get_next_line_bonus.h"
+#include <stdlib.h>
+#include "../includes/get_next_line.h"
+#include "libft.h"
 
 void	*gnl_calloc(size_t count, size_t size)
 {

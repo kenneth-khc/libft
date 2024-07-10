@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/ft_dprintf.h"
+#include "ft_dprintf.h"
 
 bool	d_isflag(char c)
 {

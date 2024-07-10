@@ -10,6 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
+#include "libft.h"
+
 /**
  * Converts an integer to a string
  * This only handles base10 numbers
@@ -18,7 +21,6 @@
  * Use modulo to get the last digit of the number and assign it into the string
 **/
 
-#include "../includes/libft.h"
 #define POSITIVE 1
 #define NEGATIVE -1
 

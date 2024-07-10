@@ -10,13 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
+#include "libft.h"
+
 /**
  * Creates a substring from string "s" 
  * that starts at index "start" and up to "len" 
 **/
-
-#include "../includes/libft.h"
-
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char			*substring;

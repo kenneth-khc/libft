@@ -15,7 +15,7 @@
  * Use current to traverse the list
  * If the list is empty, set the head to the new node 
 **/
-#include "../includes/libft.h"
+#include "libft.h"
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {

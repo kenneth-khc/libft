@@ -14,7 +14,7 @@
  * Writes a string to a file descriptor and then a newline
 **/
 
-#include "../includes/libft.h"
+#include "libft.h"
 
 void	ft_putendl_fd(char *s, int fd)
 {

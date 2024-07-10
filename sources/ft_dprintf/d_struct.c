@@ -10,7 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/ft_dprintf.h"
+#include <stdlib.h>
+#include "ft_dprintf.h"
 
 t_dformat	*d_initialize_struct(void)
 {

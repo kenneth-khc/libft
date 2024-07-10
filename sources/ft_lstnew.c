@@ -10,14 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
+#include "libft.h"
+
 /**
  * Adds a new node to the linked list
  * Returns the new node
  * The member variable 'next' in the last node of a list should be set to 0 
 **/
-
-#include "../includes/libft.h"
-
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*new_node;

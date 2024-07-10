@@ -10,14 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/ft_dprintf.h"
+#include <stdlib.h>
+#include "ft_dprintf.h"
+#include "ft_dprintf.h"
 
 void	d_print_integer(int nbr, t_dformat *format)
 {
 	char	*string;
 
 	d_resolve_format(nbr, format);
-	string = itoa(nbr);
+	string = d_itoa(nbr);
 	d_print_string_int(string, format);
 	free (string);
 }

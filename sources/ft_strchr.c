@@ -15,7 +15,7 @@
  * It expects the string to be null terminated, unlike memchr 
 **/
 
-#include "../includes/libft.h"
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {

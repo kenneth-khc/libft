@@ -10,7 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/ft_printf.h"
+#include <stdlib.h>
+#include "ft_printf.h"
 
 int	check_type(char *string, int i, t_format *format, va_list ap)
 {

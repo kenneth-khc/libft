@@ -15,7 +15,7 @@
  * Set the member variable 'next' of the new node to the head
  * Set the head of the list to point at the new node 
 **/
-#include "../includes/libft.h"
+#include "libft.h"
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
