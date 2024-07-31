@@ -74,6 +74,7 @@ void	ft_putnbr_fd(int n, int fd);
 
 // Memory allocation
 void	*ft_calloc(size_t count, size_t size);
+void	*callocpromax(size_t count, size_t size);
 
 // Linked list
 typedef struct s_list

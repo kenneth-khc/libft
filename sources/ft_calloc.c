@@ -36,3 +36,16 @@ void	*ft_calloc(size_t count, size_t size)
 	ft_bzero(ptr, bytes);
 	return (ptr);
 }
+
+void	*callocpromax(size_t count, size_t size)
+{
+	void	*ptr;
+
+	ptr = ft_calloc(count, size);
+	if (ptr == NULL)
+	{
+		write(STDERR_FILENO, "calloc failed\n", 14);
+		exit(EXIT_FAILURE);
+	}
+	return (ptr);
+}

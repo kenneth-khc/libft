@@ -25,7 +25,7 @@ char	*ft_strjoin_unsafe(char const *s1, char const *s2)
 		s1_len = ft_strlen(s1);
 	if (s2)
 		s2_len = ft_strlen(s2);
-	s3 = ft_calloc(s1_len + s2_len + 1, sizeof(*s3));
+	s3 = callocpromax(s1_len + s2_len + 1, sizeof(*s3));
 	if (s3 == NULL)
 		return (NULL);
 	ptr_to_s3 = s3;

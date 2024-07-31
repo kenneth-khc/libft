@@ -32,7 +32,7 @@ char	*ft_strjoin_multiple(int count, ...)
 	total_len = 0;
 	va_start(ap, count);
 	total_len = ft_va_strlen(count, ap);
-	joined = ft_calloc(total_len + 1, sizeof(char));
+	joined = callocpromax(total_len + 1, sizeof(char));
 	if (joined == NULL)
 		return (NULL);
 	p = joined;
