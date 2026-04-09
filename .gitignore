@@ -1,0 +1,7 @@
+# Environment
+.direnv
+.envrc
+
+# Build artifacts
+objects/
+libft.a
