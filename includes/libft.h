@@ -60,6 +60,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 char	*ft_strcpy(char *dest, const char *src);
 bool	ft_str_endswith(const char *str, const char *suffix);
+bool	ft_str_startswith(const char *str, const char *prefix);
 
 /* Integer manipulation */
 int		ft_reverse_int(int num);
