@@ -40,6 +40,13 @@ $(FT_PRINTF_OBJECTS): $(OBJECTS_DIR)/%.o: $(FT_PRINTF_DIR)/%.c
 $(FT_DPRINTF_OBJECTS): $(OBJECTS_DIR)/%.o: $(FT_DPRINTF_DIR)/%.c
 	@$(CC) $(CFLAGS) -I$(INCLUDE_DIR) -c $< -o $@
 
+watch:
+	trap "exit" INT; \
+	while true; do \
+		find $(SOURCES_DIR) $(INCLUDE_DIR) -type f \
+		| entr -cdp scripts/update_header_and_recompile.sh /_ ; \
+	done
+
 clean:
 	@rm -rf $(OBJECTS_DIR)
 	@echo "$(RED)libft objects cleaned!$(RESET)"
@@ -50,4 +57,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re watch
