@@ -49,6 +49,7 @@ typedef struct s_dformat
 // printf.c
 
 int			ft_dprintf(int fd, const char *format, ...);
+int			ft_vdprintf(int fd, const char *format, va_list args);
 t_dformat	*d_initialize_struct(void);
 void		d_reset_format(t_dformat *format);
 int			d_parse_string(char *string, va_list ap, int fd);

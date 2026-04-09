@@ -6,11 +6,12 @@
 /*   By: kecheong <kecheong@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/15 14:31:40 by kecheong          #+#    #+#             */
-/*   Updated: 2024/03/25 11:21:07 by kecheong         ###   ########.fr       */
+/*   Updated: 2026/04/06 20:39:21 by kecheong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include "libft.h"
 #include "ft_dprintf.h"
 
 int	d_check_type(char *string, int i, t_dformat *format, va_list ap)
@@ -93,5 +94,16 @@ int	ft_dprintf(int fd, const char *format, ...)
 	string = (char *) format;
 	printed_chars = d_parse_string(string, ap, fd);
 	va_end(ap);
+	return (printed_chars);
+}
+
+int	ft_vdprintf(int fd, const char *format, va_list args)
+{
+	char	*string;
+	int		printed_chars;
+
+	string = (char *)format;
+	printed_chars = d_parse_string(string, args, fd);
+	va_end(args);
 	return (printed_chars);
 }
