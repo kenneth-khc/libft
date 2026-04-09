@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include "ft_dprintf.h"
 
 int	d_check_flags(char *string, int i, t_dformat *format)

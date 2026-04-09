@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include "ft_dprintf.h"
 
 void	d_print_string(char *string, t_dformat *format)

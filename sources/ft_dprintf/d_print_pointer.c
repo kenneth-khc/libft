@@ -12,6 +12,7 @@
 
 #include <stdlib.h>
 #include <stdint.h>
+#include "libft.h"
 #include "ft_dprintf.h"
 
 void	d_print_pointer(void *pointer, t_dformat *format)

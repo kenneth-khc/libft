@@ -6,14 +6,15 @@
 /*   By: kecheong <kecheong@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/15 14:19:45 by kecheong          #+#    #+#             */
-/*   Updated: 2023/09/07 17:40:54 by kecheong         ###   ########.fr       */
+/*   Updated: 2026/04/06 20:34:24 by kecheong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_DPRINTF_H
 # define FT_DPRINTF_H
 
-# include "../includes/libft.h"
+# include <stdbool.h>
+# include <stdint.h>
 # include <stdarg.h>
 
 typedef struct s_dformat

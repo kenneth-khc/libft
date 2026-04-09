@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include "libft.h"
 #include "ft_dprintf.h"
 
 void	d_print_uninteger(int nbr, t_dformat *format)
