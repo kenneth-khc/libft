@@ -6,7 +6,7 @@
 /*   By: kecheong <kecheong@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/12 16:15:06 by kecheong          #+#    #+#             */
-/*   Updated: 2026/04/13 17:37:43 by kecheong         ###   ########.fr       */
+/*   Updated: 2026/04/14 19:23:59 by kecheong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ void	*ft_vec_init(size_t elem_size)
 	vec->elem_sz = elem_size;
 	vec->elem_cnt = 0;
 	vec->capacity = 0;
+	vec->destructor = NULL;
 	return (vec->data);
 }
 
@@ -43,5 +44,6 @@ void	*ft_vec_init_with(int elem_count, size_t elem_size)
 	vec->elem_cnt = 0;
 	vec->elem_sz = elem_size;
 	vec->capacity = elem_count;
+	vec->destructor = NULL;
 	return (vec->data);
 }

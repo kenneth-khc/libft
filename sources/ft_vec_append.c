@@ -6,7 +6,7 @@
 /*   By: kecheong <kecheong@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/13 17:29:49 by kecheong          #+#    #+#             */
-/*   Updated: 2026/04/13 17:37:13 by kecheong         ###   ########.fr       */
+/*   Updated: 2026/04/13 17:31:41 by kecheong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,6 +66,7 @@ static struct s_vec	*resize(struct s_vec *vec)
 	new_vec->elem_sz = old_vec->elem_sz;
 	new_vec->elem_cnt = old_vec->elem_cnt;
 	new_vec->capacity = new_cap;
+	new_vec->destructor = old_vec->destructor;
 	ft_memcpy(new_vec->data, vec->data, old_buffer_size);
 	free(old_vec);
 	return (new_vec);

@@ -1,36 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_vec_free.c                                      :+:      :+:    :+:   */
+/*   ft_vec_set_destructor.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kecheong <kecheong@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/13 17:33:42 by kecheong          #+#    #+#             */
-/*   Updated: 2026/04/13 17:33:45 by kecheong         ###   ########.fr       */
+/*   Created: 2026/04/14 19:22:42 by kecheong          #+#    #+#             */
+/*   Updated: 2026/04/14 19:23:43 by kecheong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_vec.h"
-#include <stdlib.h>
 
-// TODO(kecheong): simplify this
-void	ft_vec_free(void *data)
+typedef void (*function)(void*);
+
+void	ft_vec_set_destructor(void *data, function destructor)
 {
-	struct s_vec	*vec = vec_of(data);
-	size_t			i;
-	char			*addr;
-	size_t			offset;
+	struct s_vec	*vec;
 
-	i = 0;
-	if (vec->destructor)
-	{
-		while (i < vec->elem_cnt)
-		{
-			offset = i * vec->elem_sz;
-			addr = (vec->data + offset);
-			vec->destructor(*(char**)addr);
-			i++;
-		}
-	}
-	free(vec);
+	vec = vec_of(data);
+	vec->destructor = destructor;
 }
