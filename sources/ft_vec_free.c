@@ -13,13 +13,17 @@
 #include "ft_vec.h"
 #include <stdlib.h>
 
-// TODO(kecheong): simplify this
+/**
+	Deallocates the elements within the vec by calling the user's provided
+	destructor, as we can't know whether the elements and/or its fields are
+	stack allocated or heap allocated. Then, free the entire vector.
+**/
 void	ft_vec_free(void *data)
 {
-	struct s_vec	*vec = vec_of(data);
 	size_t			i;
 	char			*addr;
 	size_t			offset;
+	struct s_vec	*vec = vec_of(data);
 
 	i = 0;
 	if (vec->destructor)
@@ -28,7 +32,7 @@ void	ft_vec_free(void *data)
 		{
 			offset = i * vec->elem_sz;
 			addr = (vec->data + offset);
-			vec->destructor(*(char**)addr);
+			vec->destructor(addr);
 			i++;
 		}
 	}
