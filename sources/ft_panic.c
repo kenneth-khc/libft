@@ -19,8 +19,11 @@ void	ft_panic(int status, const char *format, ...)
 {
 	va_list	args;
 
-	va_start(args, format);
-	ft_vdprintf(STDERR_FILENO, format, args);
-	va_end(args);
+	if (format)
+	{
+		va_start(args, format);
+		ft_vdprintf(STDERR_FILENO, format, args);
+		va_end(args);
+	}
 	exit(status);
 }
