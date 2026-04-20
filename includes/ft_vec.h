@@ -30,7 +30,7 @@ typedef struct s_vec
 
 void	*ft_vec_init(size_t elem_size);
 void	*ft_vec_init_with(int elem_count, size_t elem_size);
-size_t	ft_vec_len(void *data);
+size_t	ft_vec_len(const void *data);
 void	*ft_vec_append(void *data, void *new_ele);
 void	ft_vec_pop(void *data);
 void	ft_vec_set_destructor(void *data, function destructor);
@@ -38,6 +38,6 @@ void	ft_vec_free(void *data);
 
 // Private interface
 
-t_vec	*vec_of(void *data);
+t_vec	*vec_of(const void *data);
 
 #endif

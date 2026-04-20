@@ -13,7 +13,7 @@
 #include "ft_vec.h"
 #include <stddef.h>
 
-struct s_vec	*vec_of(void *data)
+struct s_vec	*vec_of(const void *data)
 {
 	const size_t	offset = offsetof(struct s_vec, data);
 	const void		*alloc_start = data - offset;

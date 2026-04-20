@@ -12,7 +12,7 @@
 
 #include "ft_vec.h"
 
-size_t	ft_vec_len(void *data)
+size_t	ft_vec_len(const void *data)
 {
 	const struct s_vec	*vec = vec_of(data);
 
