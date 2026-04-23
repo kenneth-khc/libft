@@ -6,7 +6,7 @@
 /*   By: kecheong <kecheong@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/13 17:33:42 by kecheong          #+#    #+#             */
-/*   Updated: 2026/04/13 17:33:45 by kecheong         ###   ########.fr       */
+/*   Updated: 2026/04/23 19:43:19 by kecheong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,10 @@ void	ft_vec_free(void *data)
 	size_t			i;
 	char			*addr;
 	size_t			offset;
-	struct s_vec	*vec = vec_of(data);
+	struct s_vec	*vec;
 
 	i = 0;
+	vec = vec_of(data);
 	if (vec->destructor)
 	{
 		while (i < vec->elem_cnt)
